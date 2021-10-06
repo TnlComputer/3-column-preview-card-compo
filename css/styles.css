@@ -1,0 +1,126 @@
+/* 
+# - Mobile: 375px 
+# - Desktop: 1440px
+
+## Colors 
+
+### Primary Bright orange: hsl(31, 77%, 52%) Dark cyan: hsl(184, 100%, 22%) Very dark cyan: hsl(179, 100%, 13%) 
+
+### Neutral Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75) Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
+
+### Body Copy 
+
+- Font size: 15px
+
+### Font 
+
+- Family: [Lexend Deca](https: //fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400 
+
+- Family: [Big Shoulders Display](https: //fonts.google.com/specimen/Big+Shoulders+Display)
+    - Weights: 700
+
+*/
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  /*  (paragraphs) */
+  --Very-light-gray: hsl(0, 0%, 95%);
+  /*  (background, headings, buttons) */
+  /* width: 1440px; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+body {
+  max-width: 375px;
+  /* width: 100%; */
+}
+
+main {
+  min-width: 100vw;
+  min-height: cal(100vh-2rem);
+  margin: 0;
+  background-color: palevioletred;
+}
+
+.seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+article {
+  width: 90%;
+}
+
+.articulo__orange {
+  background-color: var(--Bright-orange);
+}
+
+.boton__Bright-orange {
+  color: var(--Bright-orange);
+}
+
+.articulo__dark-cyan {
+  background-color: var(--Dark-cyan);
+
+}
+
+.boton__Dark-cyan {
+  color: var(--Dark-cyan);
+}
+
+
+.articulo__Very-dark-cyan {
+  background-color: var(--Very-dark-cyan);
+}
+
+.boton__Very-dark-cyan {
+  color: var(--Very-dark-cyan);
+}
+
+.boton {
+  width: 10em;
+  padding: .5rem;
+  border-radius: 25px;
+}
+
+@media screen and (min-width: 700px) {
+  .seccion {
+    max-width: 1440px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+
+
+
+.footer {
+  height: 200px;
+  padding-top: 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
