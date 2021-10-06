@@ -20,6 +20,10 @@ body {
   max-width: 375px;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .main {
   min-width: 100vw;
   display: block;
@@ -34,9 +38,9 @@ body {
 }
 
 .articulo {
-  width: 250px;
-  height: 400px;
-  padding: 2.5rem;
+  width: 350px;
+  height: 500px;
+  padding: 3rem;
 }
 
 .title {
@@ -51,8 +55,10 @@ body {
   color: var(--Transparent-white);
   width: 100%;
   text-align: left;
-  font-size: 15px;
-  padding-bottom: 2em;
+  font-family: "Lexend Deca";
+  font-size: 1.2em;
+  font-weight: 400;
+  padding-bottom: 3em;
 }
 
 .articulo__Bright-orange {
